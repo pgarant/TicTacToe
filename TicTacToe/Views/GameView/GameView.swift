@@ -18,6 +18,7 @@ struct GameView: View {
             
             VStack{
                 Text("Waiting for the player")
+                
                 Button{
                     mode.wrappedValue.dismiss()
                 } label: {
@@ -30,13 +31,20 @@ struct GameView: View {
             
                 VStack{
                     LazyVGrid(columns: viewModel.columns, spacing: 5) {
+                        
                         ForEach(0..<9) { i in
+                            
                             ZStack{
+                                
                                 GameSquareView(proxy: geometry)
+                                
                                 PlayerIndicatorView(systemImageName: "applelogo")
+                                
                             } // ZStack
                             .onTapGesture {
+                                
                                 print ("Tap on button",i)
+                                
                             }
                         } // ForEach
                     } // LazyGrid
