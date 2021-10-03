@@ -12,6 +12,8 @@
 		A22C66A127093E55008A421D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A22C66A027093E55008A421D /* Assets.xcassets */; };
 		A22C66A427093E55008A421D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A22C66A327093E55008A421D /* Preview Assets.xcassets */; };
 		A22C66AB27094276008A421D /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22C66AA27094276008A421D /* GameView.swift */; };
+		A22C66AD27094649008A421D /* GameButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22C66AC27094649008A421D /* GameButton.swift */; };
+		A24C24ED2709478500F8B5A7 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24C24EC2709478500F8B5A7 /* HomeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +23,8 @@
 		A22C66A027093E55008A421D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A22C66A327093E55008A421D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A22C66AA27094276008A421D /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		A22C66AC27094649008A421D /* GameButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameButton.swift; sourceTree = "<group>"; };
+		A24C24EC2709478500F8B5A7 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +59,8 @@
 			children = (
 				A22C669C27093E53008A421D /* TicTacToeApp.swift */,
 				A22C669E27093E53008A421D /* HomeView.swift */,
+				A24C24EC2709478500F8B5A7 /* HomeViewModel.swift */,
+				A22C66AC27094649008A421D /* GameButton.swift */,
 				A22C66A027093E55008A421D /* Assets.xcassets */,
 				A22C66A227093E55008A421D /* Preview Content */,
 				A22C66AA27094276008A421D /* GameView.swift */,
@@ -141,7 +147,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A22C669F27093E53008A421D /* HomeView.swift in Sources */,
+				A22C66AD27094649008A421D /* GameButton.swift in Sources */,
 				A22C66AB27094276008A421D /* GameView.swift in Sources */,
+				A24C24ED2709478500F8B5A7 /* HomeViewModel.swift in Sources */,
 				A22C669D27093E53008A421D /* TicTacToeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
