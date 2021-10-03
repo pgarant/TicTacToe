@@ -58,12 +58,10 @@
 			isa = PBXGroup;
 			children = (
 				A22C669C27093E53008A421D /* TicTacToeApp.swift */,
-				A22C669E27093E53008A421D /* HomeView.swift */,
-				A24C24EC2709478500F8B5A7 /* HomeViewModel.swift */,
-				A22C66AC27094649008A421D /* GameButton.swift */,
+				A24C24F027094B9D00F8B5A7 /* Views */,
+				A24C24F127094BB000F8B5A7 /* Secondary Views */,
 				A22C66A027093E55008A421D /* Assets.xcassets */,
 				A22C66A227093E55008A421D /* Preview Content */,
-				A22C66AA27094276008A421D /* GameView.swift */,
 			);
 			path = TicTacToe;
 			sourceTree = "<group>";
@@ -74,6 +72,40 @@
 				A22C66A327093E55008A421D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A24C24EE27094B7D00F8B5A7 /* HomeView */ = {
+			isa = PBXGroup;
+			children = (
+				A22C669E27093E53008A421D /* HomeView.swift */,
+				A24C24EC2709478500F8B5A7 /* HomeViewModel.swift */,
+			);
+			path = HomeView;
+			sourceTree = "<group>";
+		};
+		A24C24EF27094B8B00F8B5A7 /* GameView */ = {
+			isa = PBXGroup;
+			children = (
+				A22C66AA27094276008A421D /* GameView.swift */,
+			);
+			path = GameView;
+			sourceTree = "<group>";
+		};
+		A24C24F027094B9D00F8B5A7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A24C24EE27094B7D00F8B5A7 /* HomeView */,
+				A24C24EF27094B8B00F8B5A7 /* GameView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A24C24F127094BB000F8B5A7 /* Secondary Views */ = {
+			isa = PBXGroup;
+			children = (
+				A22C66AC27094649008A421D /* GameButton.swift */,
+			);
+			path = "Secondary Views";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
