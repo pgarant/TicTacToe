@@ -13,33 +13,40 @@ struct GameView: View {
     
     var body: some View {
         
-        VStack{
-            Text("Waiting for the player")
-            Button{
-                print("Quit the game")
-            } label: {
-                GameButton(title: "Quit", bacgroundColor: Color.red)
-            }
+        GeometryReader { geometry in
             
-            Text("Loading View")
-            
-            Spacer()
-        
             VStack{
-                LazyVGrid(columns: columns, spacing: 5) {
-                    ForEach(0..<9) { i in
-                        ZStack{
-                            Circle()
-                                .foregroundColor(.blue)
-                                .frame(width: 100, height: 100, alignment: .center)
-                        } // ZStack
-                    } // ForEach
-                } // LazyGrid
-            } // VStack
-        }
-        
-    }
-}
+                Text("Waiting for the player")
+                Button{
+                    print("Quit the game")
+                } label: {
+                    GameButton(title: "Quit", bacgroundColor: Color.red)
+                }
+                
+                Text("Loading View")
+                
+                Spacer()
+            
+                VStack{
+                    LazyVGrid(columns: columns, spacing: 5) {
+                        ForEach(0..<9) { i in
+                            ZStack{
+                                Circle()
+                                    .foregroundColor(.blue.opacity(0.7))
+                                    .frame(width: geometry.size.width/3 - 15
+                                           , height: geometry.size.width/3 - 15 )
+                                Image(systemName: "applelogo")
+                                    .resizable()
+                                    .frame(width: geometry.size.width/8, height: geometry.size.width/8)
+                                    .foregroundColor(.white)
+                            } // ZStack
+                        } // ForEach
+                    } // LazyGrid
+                } // VStack 2
+            } // VStack 1
+        } // Geometry Reader
+    } // Bpdy
+} // Struct
 
 struct GameView_Previews: PreviewProvider {
     static var previews: some View {
