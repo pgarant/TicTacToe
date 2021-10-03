@@ -11,6 +11,8 @@ struct GameView: View {
     
     let columns: [GridItem] = [GridItem(.flexible()), GridItem(.flexible()), GridItem(.flexible())]
 
+//    @StateObject var viewModel = HomeViewModel()
+    
     var body: some View {
         
         GeometryReader { geometry in
@@ -18,6 +20,7 @@ struct GameView: View {
             VStack{
                 Text("Waiting for the player")
                 Button{
+//                  viewModel.isGameViewPresented = false
                     print("Quit the game")
                 } label: {
                     GameButton(title: "Quit", bacgroundColor: Color.red)
