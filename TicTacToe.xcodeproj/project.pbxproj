@@ -15,6 +15,7 @@
 		A22C66AD27094649008A421D /* GameButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22C66AC27094649008A421D /* GameButton.swift */; };
 		A237D2702709EDD000B81BAE /* GameSquareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A237D26F2709EDD000B81BAE /* GameSquareView.swift */; };
 		A237D2722709EED300B81BAE /* PlayerIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A237D2712709EED300B81BAE /* PlayerIndicatorView.swift */; };
+		A237D2742709F23A00B81BAE /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A237D2732709F23A00B81BAE /* LoadingView.swift */; };
 		A24C24ED2709478500F8B5A7 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24C24EC2709478500F8B5A7 /* HomeViewModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +29,7 @@
 		A22C66AC27094649008A421D /* GameButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameButton.swift; sourceTree = "<group>"; };
 		A237D26F2709EDD000B81BAE /* GameSquareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSquareView.swift; sourceTree = "<group>"; };
 		A237D2712709EED300B81BAE /* PlayerIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PlayerIndicatorView.swift; path = TicTacToe/Views/GameView/PlayerIndicatorView.swift; sourceTree = SOURCE_ROOT; };
+		A237D2732709F23A00B81BAE /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		A24C24EC2709478500F8B5A7 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -110,6 +112,7 @@
 				A237D2712709EED300B81BAE /* PlayerIndicatorView.swift */,
 				A22C66AC27094649008A421D /* GameButton.swift */,
 				A237D26F2709EDD000B81BAE /* GameSquareView.swift */,
+				A237D2732709F23A00B81BAE /* LoadingView.swift */,
 			);
 			path = "Secondary Views";
 			sourceTree = "<group>";
@@ -189,6 +192,7 @@
 				A22C66AD27094649008A421D /* GameButton.swift in Sources */,
 				A22C66AB27094276008A421D /* GameView.swift in Sources */,
 				A237D2702709EDD000B81BAE /* GameSquareView.swift in Sources */,
+				A237D2742709F23A00B81BAE /* LoadingView.swift in Sources */,
 				A24C24ED2709478500F8B5A7 /* HomeViewModel.swift in Sources */,
 				A22C669D27093E53008A421D /* TicTacToeApp.swift in Sources */,
 			);
