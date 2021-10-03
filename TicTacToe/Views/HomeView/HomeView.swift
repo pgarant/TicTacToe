@@ -16,7 +16,7 @@ struct HomeView: View {
             Button{
                 viewModel.isGameViewPresented = true
             } label: {
-                GameButton(title: "Play", bacgroundColor: Color.blue)
+                GameButton(title: "Play", bacgroundColor: Color.green)
             }
         }
         .fullScreenCover(isPresented: $viewModel.isGameViewPresented){

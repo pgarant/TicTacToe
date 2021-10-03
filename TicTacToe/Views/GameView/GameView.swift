@@ -14,7 +14,7 @@ struct GameView: View {
             Button{
                 print("yeah")
             } label: {
-                GameButton(title: "Quit game", bacgroundColor: Color.red)
+                GameButton(title: "Quit", bacgroundColor: Color.red)
             }
             Text("Loading View...")
             Spacer()
