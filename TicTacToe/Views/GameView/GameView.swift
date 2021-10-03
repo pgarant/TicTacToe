@@ -8,18 +8,36 @@
 import SwiftUI
 
 struct GameView: View {
+    
+    let columns: [GridItem] = [GridItem(.flexible()), GridItem(.flexible()), GridItem(.flexible())]
+    
     var body: some View {
+        
         VStack{
             Text("Waiting for the player")
             Button{
-                print("yeah")
+                print("Quit the game")
             } label: {
                 GameButton(title: "Quit", bacgroundColor: Color.red)
             }
-            Text("Loading View...")
+            
+            Text("Loading View")
+            
             Spacer()
-            Text("Game View Here...")
+        
+            VStack{
+                LazyVGrid(columns: columns, spacing: 5) {
+                    ForEach(0..<9) { i in
+                        ZStack{
+                            Circle()
+                                .foregroundColor(.blue)
+                                .frame(width: 100, height: 100, alignment: .center)
+                        } // ZStack
+                    } // ForEach
+                } // LazyGrid
+            } // VStack
         }
+        
     }
 }
 
