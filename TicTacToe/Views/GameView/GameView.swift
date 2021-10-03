@@ -10,7 +10,7 @@ import SwiftUI
 struct GameView: View {
     
     let columns: [GridItem] = [GridItem(.flexible()), GridItem(.flexible()), GridItem(.flexible())]
-    
+
     var body: some View {
         
         GeometryReader { geometry in
