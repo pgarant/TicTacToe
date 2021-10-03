@@ -12,6 +12,8 @@ struct GameView: View {
     @ObservedObject var viewModel: GameViewModel
     @Environment(\.presentationMode) var mode: Binding<PresentationMode>
     
+    @State var isPlayer1 = true
+    
     var body: some View {
         
         GeometryReader { geometry in
@@ -38,12 +40,13 @@ struct GameView: View {
                                 
                                 GameSquareView(proxy: geometry)
                                 
-                                PlayerIndicatorView(systemImageName: "applelogo")
+                                PlayerIndicatorView(systemImageName: viewModel.game.moves[i]?.indicator ?? "applelogo")
                                 
                             } // ZStack
                             .onTapGesture {
-                                
-                                print ("Tap on button",i)
+
+                                viewModel.processPlayerMove(for: i, isPlayer1: isPlayer1)
+                                isPlayer1.toggle()
                                 
                             }
                         } // ForEach
