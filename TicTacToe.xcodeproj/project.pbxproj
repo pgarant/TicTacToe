@@ -13,6 +13,8 @@
 		A22C66A427093E55008A421D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A22C66A327093E55008A421D /* Preview Assets.xcassets */; };
 		A22C66AB27094276008A421D /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22C66AA27094276008A421D /* GameView.swift */; };
 		A22C66AD27094649008A421D /* GameButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22C66AC27094649008A421D /* GameButton.swift */; };
+		A237D2702709EDD000B81BAE /* GameSquareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A237D26F2709EDD000B81BAE /* GameSquareView.swift */; };
+		A237D2722709EED300B81BAE /* PlayerIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A237D2712709EED300B81BAE /* PlayerIndicatorView.swift */; };
 		A24C24ED2709478500F8B5A7 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24C24EC2709478500F8B5A7 /* HomeViewModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -24,6 +26,8 @@
 		A22C66A327093E55008A421D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A22C66AA27094276008A421D /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		A22C66AC27094649008A421D /* GameButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameButton.swift; sourceTree = "<group>"; };
+		A237D26F2709EDD000B81BAE /* GameSquareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSquareView.swift; sourceTree = "<group>"; };
+		A237D2712709EED300B81BAE /* PlayerIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PlayerIndicatorView.swift; path = TicTacToe/Views/GameView/PlayerIndicatorView.swift; sourceTree = SOURCE_ROOT; };
 		A24C24EC2709478500F8B5A7 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -103,7 +107,9 @@
 		A24C24F127094BB000F8B5A7 /* Secondary Views */ = {
 			isa = PBXGroup;
 			children = (
+				A237D2712709EED300B81BAE /* PlayerIndicatorView.swift */,
 				A22C66AC27094649008A421D /* GameButton.swift */,
+				A237D26F2709EDD000B81BAE /* GameSquareView.swift */,
 			);
 			path = "Secondary Views";
 			sourceTree = "<group>";
@@ -179,8 +185,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A22C669F27093E53008A421D /* HomeView.swift in Sources */,
+				A237D2722709EED300B81BAE /* PlayerIndicatorView.swift in Sources */,
 				A22C66AD27094649008A421D /* GameButton.swift in Sources */,
 				A22C66AB27094276008A421D /* GameView.swift in Sources */,
+				A237D2702709EDD000B81BAE /* GameSquareView.swift in Sources */,
 				A24C24ED2709478500F8B5A7 /* HomeViewModel.swift in Sources */,
 				A22C669D27093E53008A421D /* TicTacToeApp.swift in Sources */,
 			);

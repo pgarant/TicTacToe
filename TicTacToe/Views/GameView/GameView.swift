@@ -34,15 +34,12 @@ struct GameView: View {
                     LazyVGrid(columns: columns, spacing: 5) {
                         ForEach(0..<9) { i in
                             ZStack{
-                                Circle()
-                                    .foregroundColor(.blue.opacity(0.7))
-                                    .frame(width: geometry.size.width/3 - 15
-                                           , height: geometry.size.width/3 - 15 )
-                                Image(systemName: "applelogo")
-                                    .resizable()
-                                    .frame(width: geometry.size.width/8, height: geometry.size.width/8)
-                                    .foregroundColor(.white)
+                                GameSquareView(proxy: geometry)
+                                PlayerIndicatorView(systemImageName: "applelogo")
                             } // ZStack
+                            .onTapGesture {
+                                print ("Tap on button",i)
+                            }
                         } // ForEach
                     } // LazyGrid
                 } // VStack 2
