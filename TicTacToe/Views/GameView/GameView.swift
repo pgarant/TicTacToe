@@ -9,9 +9,8 @@ import SwiftUI
 
 struct GameView: View {
     
-    let columns: [GridItem] = [GridItem(.flexible()), GridItem(.flexible()), GridItem(.flexible())]
-
-//    @StateObject var viewModel = HomeViewModel()
+    @ObservedObject var viewModel: GameViewModel
+    @Environment(\.presentationMode) var mode: Binding<PresentationMode>
     
     var body: some View {
         
@@ -20,8 +19,7 @@ struct GameView: View {
             VStack{
                 Text("Waiting for the player")
                 Button{
-//                  viewModel.isGameViewPresented = false
-                    print("Quit the game")
+                    mode.wrappedValue.dismiss()
                 } label: {
                     GameButton(title: "Quit", bacgroundColor: Color.red)
                 }
@@ -31,7 +29,7 @@ struct GameView: View {
                 Spacer()
             
                 VStack{
-                    LazyVGrid(columns: columns, spacing: 5) {
+                    LazyVGrid(columns: viewModel.columns, spacing: 5) {
                         ForEach(0..<9) { i in
                             ZStack{
                                 GameSquareView(proxy: geometry)
@@ -50,6 +48,6 @@ struct GameView: View {
 
 struct GameView_Previews: PreviewProvider {
     static var previews: some View {
-        GameView()
+        GameView(viewModel: GameViewModel())
     }
 }

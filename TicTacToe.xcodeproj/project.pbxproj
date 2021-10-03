@@ -16,6 +16,7 @@
 		A237D2702709EDD000B81BAE /* GameSquareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A237D26F2709EDD000B81BAE /* GameSquareView.swift */; };
 		A237D2722709EED300B81BAE /* PlayerIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A237D2712709EED300B81BAE /* PlayerIndicatorView.swift */; };
 		A237D2742709F23A00B81BAE /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A237D2732709F23A00B81BAE /* LoadingView.swift */; };
+		A237D2762709F4BF00B81BAE /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A237D2752709F4BF00B81BAE /* GameViewModel.swift */; };
 		A24C24ED2709478500F8B5A7 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24C24EC2709478500F8B5A7 /* HomeViewModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +31,7 @@
 		A237D26F2709EDD000B81BAE /* GameSquareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSquareView.swift; sourceTree = "<group>"; };
 		A237D2712709EED300B81BAE /* PlayerIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PlayerIndicatorView.swift; path = TicTacToe/Views/GameView/PlayerIndicatorView.swift; sourceTree = SOURCE_ROOT; };
 		A237D2732709F23A00B81BAE /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		A237D2752709F4BF00B81BAE /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GameViewModel.swift; path = TicTacToe/Views/HomeView/GameViewModel.swift; sourceTree = SOURCE_ROOT; };
 		A24C24EC2709478500F8B5A7 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -92,6 +94,7 @@
 		A24C24EF27094B8B00F8B5A7 /* GameView */ = {
 			isa = PBXGroup;
 			children = (
+				A237D2752709F4BF00B81BAE /* GameViewModel.swift */,
 				A22C66AA27094276008A421D /* GameView.swift */,
 			);
 			path = GameView;
@@ -187,6 +190,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A237D2762709F4BF00B81BAE /* GameViewModel.swift in Sources */,
 				A22C669F27093E53008A421D /* HomeView.swift in Sources */,
 				A237D2722709EED300B81BAE /* PlayerIndicatorView.swift in Sources */,
 				A22C66AD27094649008A421D /* GameButton.swift in Sources */,
