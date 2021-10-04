@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A205BA40270AA5250004DD85 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A205BA3F270AA5250004DD85 /* User.swift */; };
 		A22C669D27093E53008A421D /* TicTacToeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22C669C27093E53008A421D /* TicTacToeApp.swift */; };
 		A22C669F27093E53008A421D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22C669E27093E53008A421D /* HomeView.swift */; };
 		A22C66A127093E55008A421D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A22C66A027093E55008A421D /* Assets.xcassets */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A205BA3F270AA5250004DD85 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		A22C669927093E53008A421D /* TicTacToe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TicTacToe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A22C669C27093E53008A421D /* TicTacToeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicTacToeApp.swift; sourceTree = "<group>"; };
 		A22C669E27093E53008A421D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				A237D2782709FAAF00B81BAE /* Model.swift */,
+				A205BA3F270AA5250004DD85 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -211,6 +214,7 @@
 				A237D2742709F23A00B81BAE /* LoadingView.swift in Sources */,
 				A24C24ED2709478500F8B5A7 /* HomeViewModel.swift in Sources */,
 				A22C669D27093E53008A421D /* TicTacToeApp.swift in Sources */,
+				A205BA40270AA5250004DD85 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

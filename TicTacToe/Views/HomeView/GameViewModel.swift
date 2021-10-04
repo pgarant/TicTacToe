@@ -8,12 +8,25 @@
 
 final class GameViewModel: ObservableObject{
     
+    @AppStorage("user") private var userData: Data?
+    
     let columns: [GridItem] = [GridItem(.flexible()), GridItem(.flexible()), GridItem(.flexible())]
     
     @Published var game = Game(id: UUID().uuidString, player1Id: "Player 1", player2Id: "Player 2", blockMoveForPlayerId: "Player 2", winningPlayerId: "", rematchPlayerId: [], moves: Array(repeating: nil, count: 9) )
+    @Published var currentUser: User!
     
     private let winPatterns: Set<Set<Int>> = [ [0,1,2],[3,4,5],[6,7,8],[0,3,6], [1,4,7], [2,5,8], [0,4,8], [2,4,6] ]
+    
+    init(){
+        retrieveUser()
+        if (currentUser == nil) {
+            saveUser()
+        }
         
+        print ("We have a user with id", currentUser.id)
+        
+    }
+    
     func processPlayerMove (for position: Int, isPlayer1: Bool) {
 
         if isSquareOccupied(in: game.moves, forIndex: position) { return }
@@ -41,7 +54,6 @@ final class GameViewModel: ObservableObject{
     }
     
     func checkForWinCondition(for player1:Bool, in moves: [Move?]) -> Bool {
-        
         // remove all nils
         let playerMoves = moves.compactMap {$0}.filter { $0.isPlayer1 == player1 }
         let playerPositions = Set( playerMoves.map { $0.boardIndex } )
@@ -49,13 +61,31 @@ final class GameViewModel: ObservableObject{
         for pattern in winPatterns where pattern.isSubset(of: playerPositions ) { return true }
         
         return false
-        
     }
     
     func checkForDraw(in moves: [Move?]) -> Bool {
-        
         return moves.compactMap {$0}.count == 9
-        
+    }
+    
+    func saveUser() {
+        currentUser = User()
+        do {
+            print ("Encoding user")
+            let data = try JSONEncoder().encode(currentUser)
+            userData = data
+        } catch {
+            print ("Could not save user object")
+        }
+    }
+
+    func retrieveUser() {
+        guard let userData = userData else { return }
+        do {
+            print ("Decoding user")
+            currentUser = try JSONDecoder().decode(User.self, from: userData)
+        } catch {
+            print ("No user saved")
+        }
     }
     
 }
