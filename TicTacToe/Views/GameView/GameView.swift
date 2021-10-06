@@ -53,6 +53,8 @@ struct GameView: View {
                     } // LazyGrid
                 } // VStack 2
             } // VStack 1
+        }.onAppear{
+            
         } // Geometry Reader
     } // Bpdy
 } // Struct
